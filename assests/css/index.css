@@ -1,0 +1,265 @@
+@import url("./layout.css");
+
+:root {
+	--primary-color: #30fbef;
+	--purple-color: #9c69e2;
+	--pagination-color: #f063b8;
+	--body-bg: #282828;
+	--section-bg: radial-gradient(38.2% 50% at 50% 50%, #2e3134 0%, #292b2e 100%);
+	--section-container-shadow: inset 2px 2px 40px 0px #0000004d;
+	--card-bg: #212121;
+	--card-container-shadow: 9px 9px 10px rgba(0, 0, 0, 0.25),
+		-9px -9px 10px rgba(75, 93, 104, 0.1);
+	--btn-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25),
+		-3px -3px 8px rgba(75, 93, 104, 0.1);
+	--btn-inset-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+	--section-padding: 100px 75px;
+}
+
+/* ******************************************
+*********** fonts *****************
+****************************************** */
+@font-face {
+	font-family: now-bold;
+	src: url("../../fonts/now-bold-webfont.woff");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: now-regular;
+	src: url("../../fonts/now-regular-webfont.woff");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: now-black;
+	src: url("../../fonts/now-black-webfont.woff");
+	font-weight: bold;
+}
+
+/* ******************************************
+*********** Utilities *****************
+****************************************** */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--body-bg);
+	font-family: now-regular;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+	margin-bottom: 0;
+	list-style-type: none;
+}
+
+img {
+	width: 100%;
+}
+
+.btn {
+	padding: 16px 60px;
+	border: none;
+	border-radius: 50px;
+	background: transparent;
+	box-shadow: var(--btn-shadow);
+	color: white;
+	cursor: pointer;
+}
+
+.purple-arrow {
+	color: var(--purple-color);
+}
+
+/* ************** */
+/* navbar  */
+/* ************** */
+nav {
+	background: transparent;
+	padding: 50px 120px;
+}
+
+.brand {
+	gap: 10px;
+}
+
+.brand img {
+	height: 50px;
+	width: 50px;
+}
+
+.brand-name {
+	color: var(--primary-color);
+	font-weight: bold;
+	font-family: now-bold;
+	font-size: 26px;
+}
+
+.links {
+	gap: 40px;
+	color: white;
+}
+
+.links_list {
+	gap: 40px;
+}
+
+.links_list_item a {
+	color: white;
+	transition: all 0.2s;
+}
+
+.links_list_item a:hover {
+	color: var(--primary-color);
+}
+
+.request-demo .btn {
+	padding: 14px 26px;
+	color: var(--primary-color);
+}
+
+.request-demo .btn .purple-arrow {
+	transition: all 0.3s;
+	transform: translateX(2px);
+	display: inline-block;
+}
+
+.request-demo button:hover .purple-arrow {
+	transform: translateX(10px);
+}
+
+/* ************** */
+/* navbar ends */
+/* ************** */
+
+/* ************** */
+/* Header  */
+/* ************** */
+.header_container {
+	width: 70%;
+	margin: auto;
+	padding: 70px 0;
+	gap: 20px;
+	grid-template-columns: 7fr 4fr;
+}
+
+.header_title {
+	font-size: 75px;
+	color: var(--primary-color);
+	font-family: now-black;
+	line-height: 80px;
+	margin-bottom: 40px;
+}
+
+.header_desc {
+	font-size: 17px;
+	margin-bottom: 40px;
+}
+
+.header_container .btn {
+	font-family: now-bold;
+	font-size: 20px;
+	transition: all 0.2s;
+}
+
+.header_container .btn:hover {
+	color: var(--primary-color);
+}
+/* ************** */
+/* Header ends  */
+/* ************** */
+
+/* ************** */
+/* main start  */
+/* ************** */
+main {
+	gap: 130px;
+	width: 70%;
+	margin: auto;
+}
+
+/* sections common classes  */
+#about,
+#feature,
+#download,
+#testimonial {
+	padding: var(--section-padding);
+	background: var(--section-bg);
+	box-shadow: var(--section-container-shadow);
+	border-radius: 50px;
+}
+
+.section_title {
+	color: var(--primary-color);
+	font-size: 36px;
+	font-family: now-black;
+	line-height: 45px;
+	margin-bottom: 40px;
+}
+
+.section_desc {
+	font-size: 17px;
+}
+
+/* about section  */
+.about_container {
+	grid-template-columns: 4fr 5fr;
+	gap: 50px;
+}
+
+/* download section */
+.download_container {
+	grid-template-columns: 1fr 1fr;
+}
+
+.download_container .btn {
+	margin-top: 40px;
+	font-family: now-bold;
+	font-size: 20px;
+	transition: all 0.2s;
+}
+
+.download_container .btn:hover {
+	color: var(--primary-color);
+}
+
+.download_container .img {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.download_container img {
+	display: inline-block;
+	position: absolute;
+	height: 790px;
+	width: 775px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-44%, -48%);
+}
+
+/* ************** */
+/* main ends  */
+/* ************** */ ;

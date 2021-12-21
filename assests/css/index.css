@@ -103,6 +103,7 @@ img {
 	width: 100%;
 	position: relative;
 	height: 560px;
+	overflow: hidden;
 }
 
 .slide_cards {
@@ -110,6 +111,7 @@ img {
 	gap: 40px;
 	left: 0;
 	top: 0;
+	transition: all 0.5s;
 }
 
 .slide-card {
@@ -129,6 +131,7 @@ img {
 	border-radius: 50%;
 	background: white;
 	cursor: pointer;
+	transition: all 0.5s;
 }
 
 .dot_controller div.active {

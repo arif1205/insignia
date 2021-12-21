@@ -16,10 +16,13 @@
 		></script>
 		<!-- external css file -->
 		<link rel="stylesheet" href="./assests/css/index.css" />
+		<link rel="stylesheet" href="./assests/css/responsive.css" />
 	</head>
 	<body>
 		<!-- Navbar  -->
-		<nav>
+		<nav class="">
+			<div class="scroll-indicator"></div>
+
 			<div class="d-flex j-between">
 				<div class="brand d-flex j-start">
 					<div class="img">
@@ -29,7 +32,7 @@
 						<span>Insignia</span>
 					</div>
 				</div>
-				<div class="links d-flex j-start">
+				<div class="links d-flex j-start" id="side-nav">
 					<ul class="links_list d-flex j-start">
 						<li class="links_list_item">
 							<a href="#">About</a>
@@ -53,6 +56,7 @@
 						</button>
 					</div>
 				</div>
+				<div class="bars"><span>☰</span></div>
 			</div>
 		</nav>
 		<!-- navbar ends  -->
@@ -338,27 +342,109 @@
 
 		<div class="divider"></div>
 
+		<div id="offer">
+			<div class="offer_container d-flex j-between">
+				<div class="text">
+					<h1 class="section_title">Try for free!</h1>
+					<p class="section_desc">Get limited 1 week free try our website</p>
+				</div>
+				<div class="btns d-flex">
+					<button class="btn">Learn more</button>
+					<button class="btn request-demo">
+						<span>Request Demo</span>
+						<span
+							><i class="fas fa-long-arrow-alt-right purple-arrow"></i
+						></span>
+					</button>
+				</div>
+			</div>
+		</div>
+
 		<!-- footer start -->
 		<footer>
 			<div class="footer_container">
-				<div id="offer">
-					<div class="offer_container d-flex j-between">
-						<div class="text">
-							<h1 class="section_title">Try for free!</h1>
-							<p class="section_desc">
-								Get limited 1 week free try our website
+				<div class="d-grid j-between">
+					<div class="address">
+						<div class="brand d-flex j-start">
+							<div class="img">
+								<img src="./assests/img/logo.png" alt="logo" />
+							</div>
+							<div class="brand-name">
+								<span>Insignia</span>
+							</div>
+						</div>
+						<div class="street">
+							<p>
+								Insignia Society, 234 <br />
+								Bahagia Ave Street PRBW 29281
+							</p>
+							<p>
+								info@insignia.com <br />
+								1-232-3434 (Main)
 							</p>
 						</div>
-						<div class="btns d-flex">
-							<button class="btn">Learn more</button>
-							<button class="btn request-demo">
-								<span>Request Demo</span>
-								<span
-									><i class="fas fa-long-arrow-alt-right purple-arrow"></i
-								></span>
-							</button>
+					</div>
+					<div class="footer_links">
+						<div class="d-flex j-evenly">
+							<div class="footer_links_about">
+								<div class="footer_links_header">
+									<a href="#">About</a>
+								</div>
+								<ul class="d-flex f-column">
+									<li class="footer_links_item"><a href="#">Profile</a></li>
+									<li class="footer_links_item"><a href="#">Features</a></li>
+									<li class="footer_links_item"><a href="#">Careers</a></li>
+									<li class="footer_links_item"><a href="#">DW News</a></li>
+								</ul>
+							</div>
+							<div class="footer_links_help">
+								<div class="footer_links_header">
+									<a href="#">Help</a>
+								</div>
+								<ul class="d-flex f-column">
+									<li class="footer_links_item"><a href="#">Support</a></li>
+									<li class="footer_links_item"><a href="#">Signup</a></li>
+									<li class="footer_links_item"><a href="#">Guides</a></li>
+									<li class="footer_links_item"><a href="#">Reports</a></li>
+									<li class="footer_links_item"><a href="#">Q&A</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
+					<div class="social_links">
+						<div class="footer_links_header">
+							<a href="#">Social Media</a>
+						</div>
+						<div class="social_icons">
+							<ul class="d-flex j-start">
+								<li class="social_icons_item">
+									<a href="#"
+										><span><i class="fab fa-facebook-f"></i></span
+									></a>
+								</li>
+								<li class="social_icons_item">
+									<a href="#"
+										><span><i class="fab fa-twitter"></i></span
+									></a>
+								</li>
+								<li class="social_icons_item">
+									<a href="#"
+										><span><i class="fab fa-instagram"></i></span
+									></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="d-flex j-between copyright">
+					<p class="copyright-text">
+						&copy; Insignia™, 2020. All rights reserved.
+					</p>
+					<p class="social_icons_item">
+						<a href="#" class="messenger">
+							<span><i class="far fa-comment-dots"></i></span>
+						</a>
+					</p>
 				</div>
 			</div>
 		</footer>
